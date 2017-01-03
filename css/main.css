@@ -1,0 +1,171 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: #f0f1f2;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: .6em 0 .3em 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 43px;
+}
+ /*Override Bootstrap forms*/
+}
+p {
+  margin-bottom: 4em;
+  line-height: 1.6;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+a:link, a:visited {
+  color: #1895b2;
+}
+
+a:hover {
+  color: #1d7e95;
+}
+
+.btn-primary {
+  background: #1895b2;
+  border-color: #1c6e81;
+}
+
+.btn-primary:hover {
+  background: #1d7e95;
+}
+
+
+.has-success .form-control, .has-success .form-control:focus {
+  border-color: #1895b2;
+  
+}
+
+.has-success .form-control:focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #1895b2;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #1895b2;
+}
+
+
+
+ .radio, .checkbox {
+  padding-left: 0;
+ }
+
+ .radio ul, .checkbox ul {
+  list-style-type: none;
+  padding-left: 0;
+ }
+
+ .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+   margin-left: 0;
+   margin-right: .5em;
+ }
+
+fieldset {
+  margin-bottom: 4em;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+
+.form-inline .form-group {
+  width: 140px;
+}
+
+
+.form-group {
+  margin-bottom: 1.8em;
+}
+
+.form-group label {
+  margin-bottom: .5em;
+}
+
+
+.form-control {
+  height: auto;
+}
+
+
+.form-control, .btn {
+  border-radius: 0;
+}
+
+.form-inline .form-group {
+  margin-right: .5em;
+}
+
+
+
+.col-xs-12 {
+  clear: both;
+  margin-bottom: 60px;
+}
+
+.social {
+  margin-bottom: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center img {
+  margin-top: 10px;
+}
+
+
+.fb-like {
+  margin-left: 30px;
+}
+
+.short-description {
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.2;
+  outline: 1px solid red;
+  width: 75%;
+  min-width: 250px;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.short, .full {
+  overflow: hidden;
+}
+
+.view-more {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-top: 18px;
+  color: navy;
+  cursor: pointer;
+}
+
+hr {
+  margin: 20px 0; 
+}
