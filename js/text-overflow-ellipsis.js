@@ -1,5 +1,5 @@
 (function($) {
-  $.fn.setLinesAndEllipsis = function() {
+  $.fn.textOverflowEllipsis = function() {
     var $this = $(this),
       $full = $this.find(".full"),
       $short = $this.find(".short"),

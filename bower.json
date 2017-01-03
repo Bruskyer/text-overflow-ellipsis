@@ -1,0 +1,14 @@
+{
+  "name": "text-overflow-ellipsis",
+  "version": "v1.0.0",
+  "main": "js/text-overflow-ellipsis.js",
+  "dependencies": {
+      "jquery": ">=2.0"
+  },
+  "ignore": [
+    "images",
+    "bower.json",
+    "index.html",
+    "js/vendor"
+  ]
+}
