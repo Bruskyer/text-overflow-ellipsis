@@ -15,12 +15,16 @@
       $full.addClass("hide");
       var shortText;
       $short.text(fulltext);
+      
+
       while ($short.height() > thisHeight) {
         $short.text(function(index, text) {
           return shortText = text.replace(/\W*\s(\S)*$/, '...');
         })
       }
       $short.text(shortText);
+      
+      
     }
     else {
       $this.next(".js-view-more").hide();
