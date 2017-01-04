@@ -11,11 +11,11 @@
       totalHeight = thisHeight + paddingHeight;
 
     $this.css("height", totalHeight + "px");
-    if ($full.height() > thisHeight) {
+    if ($full.height() > totalHeight) {
       $full.addClass("hide");
       var shortText;
       $short.text(fulltext);
-      while ($short.height() > thisHeight) {
+      while ($short.height() > totalHeight) {
         $short.text(function(index, text) {
           return shortText = text.replace(/\W*\s(\S)*$/, '...');
         })
