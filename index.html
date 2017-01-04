@@ -6,7 +6,7 @@
     <title>text-overflow-ellipsis.js - simple jQuery plugin for multi-line text overflow ellipsis</title>
     <meta name="description" content="text-overflow-ellipsis.js is a simple jQuery plugin that allows setting an overflow of an ellipsis on multi-line text blocks...">
     <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     
@@ -14,26 +14,29 @@
 
   </head>
   <body>
-    <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <a href="//github.com/zaneray"><img style="position: absolute; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     <div class="container">
       <h1>text-overflow-ellipsis.js</h1>
       <p>text-overflow-ellipsis.js is a jQuery plugin for adding in client-side multi-line text overflow based on line number. Adds in a simple ellipsis (...) at the end of each visible line, with ability to show/hide the full text on click of the view more link. Check out the demo below, <a href="https://github.com/zaneray/text-overflow-ellipsis">then read the documentation here.</a></p>
 
     </div>
 
-    <div class="short-description js-ellipsis" data-lines="2">
-      <div class="full">Has attribute data-lines="2". We have a lot of text here, but we want it to overflow correctly. We want to cut off the text at a specific line using the "data-lines='xx'" attribute, so we have the option of 1 to however many lines of text desired. Also added in a specific "view more" link that animates the full text in on click, sliding down or back up depending on if it is open or not already. Now I'm just adding in more text, la di dadi.</div>
-      <div class="short"></div>
-      
+    <div class="container">
+
+      <div class="short-description js-ellipsis" data-lines="2">
+        <div class="full">Has attribute data-lines="2". We have a lot of text here, but we want it to overflow correctly. We want to cut off the text at a specific line using the "data-lines='xx'" attribute, so we have the option of 1 to however many lines of text desired. Also added in a specific "view more" link that animates the full text in on click, sliding down or back up depending on if it is open or not already. Now I'm just adding in more text, la di dadi.</div>
+        <div class="short"></div>
+        
+      </div>
+      <div class="view-more js-view-more">View More</div>
+      <hr>
+      <div class="short-description js-ellipsis" data-lines="4">
+        <div class="full">Has attribute data-lines="4". We have a lot of text here, but we want it to overflow correctly. We want to cut off the text at a specific line using the "data-lines='xx'" attribute, so we have the option of 1 to however many lines of text desired. Also added in a specific "view more" link that animates the full text in on click, sliding down or back up depending on if it is open or not already. Now I'm just adding in more text, la di dadi.</div>
+        <div class="short"></div>
+        
+      </div>
+      <div class="view-more js-view-more">View More</div>
     </div>
-    <div class="view-more js-view-more">View More</div>
-    <hr>
-    <div class="short-description js-ellipsis" data-lines="4">
-      <div class="full">Has attribute data-lines="4". We have a lot of text here, but we want it to overflow correctly. We want to cut off the text at a specific line using the "data-lines='xx'" attribute, so we have the option of 1 to however many lines of text desired. Also added in a specific "view more" link that animates the full text in on click, sliding down or back up depending on if it is open or not already. Now I'm just adding in more text, la di dadi.</div>
-      <div class="short"></div>
-      
-    </div>
-    <div class="view-more js-view-more">View More</div>
 
     <div class="col-xs-12 center">
       <div class="social">
@@ -44,11 +47,11 @@
       </div>
 
       Brought to you by the folks at<br>
-      <a href="http://www.zaneray.com"><img src="images/ZR-logo.png" alt="The ZaneRay Group"></a> 
+      <a href="//www.zaneray.com"><img src="images/ZR-logo.png" alt="The ZaneRay Group"></a> 
     </div>
 
     <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      src="//code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/text-overflow-ellipsis.js"></script>
@@ -69,7 +72,7 @@
     <script type="text/javascript">
       (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/platform.js';
+        po.src = '//apis.google.com/js/platform.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
