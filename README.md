@@ -24,3 +24,9 @@ There are minor requirements for having the text-overflow-ellipsis work correctl
     
   </div>
   <div class="view-more js-view-more">View More</div></code></pre>
+
+  #Caveats
+
+  * Line height must be set somewhere in the css waterfall
+  * Padding on the .short-description will be accounted for, but a margin on the .short/.full will be funky until after the view-more link is clicked
+  
