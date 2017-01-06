@@ -9,7 +9,10 @@
       $viewMore = $(this).next(),
       paddingHeight = Math.ceil(parseInt($this.css("padding-top"))) + Math.ceil(parseInt($this.css("padding-bottom"))),
       totalHeight = thisHeight + paddingHeight;
-
+    
+    // delete previously attached events to prevent double fire
+    $viewMore.off("click");
+    
     $this.css("height", totalHeight + "px");
     if ($full.height() > thisHeight) {
       $full.addClass("hide");
