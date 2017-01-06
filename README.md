@@ -37,23 +37,21 @@ If you like to use this script in a environment that changes its size you can co
 var doReInintTextOverflow;
     
     $(function(){
-      if ($( window ).width() > 767){
-        $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
-      } else {
-        $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
-        $(window).on('resize', function(){
-          clearTimeout(doReInintTextOverflow);
-          doReInintTextOverflow = setTimeout(initTextOverflow, 500);
-        });
-      }
+      $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
+      $(window).on('resize', function(){
+        clearTimeout(doReInintTextOverflow);
+        doReInintTextOverflow = setTimeout(initTextOverflow, 500);
+      });
     });
 
     var initTextOverflow = function(){
-      alert('init again');
       $(".short-description").css('height', '');
       $(".short-description").removeAttr('style');
       $(".short-description .short").html('');
       $(".full").removeClass('hide');
+      $('.js-view-more').css('display', '');
+      $('.js-view-more').removeAttr('style');
+
       $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
     };
   
