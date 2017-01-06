@@ -29,4 +29,31 @@ There are minor requirements for having the text-overflow-ellipsis work correctl
 
   * Line height must be set somewhere in the css waterfall
   * Padding on the .short-description will be accounted for, but a margin on the .short/.full will be funky until after the view-more link is clicked
+
+#Notes
+
+If you like to use this script in a environment that changes its size you can consider using the following javascript to reinit the text overflow:
+
+var doReInintTextOverflow;
+    
+    $(function(){
+      if ($( window ).width() > 767){
+        $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
+      } else {
+        $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
+        $(window).on('resize', function(){
+          clearTimeout(doReInintTextOverflow);
+          doReInintTextOverflow = setTimeout(initTextOverflow, 500);
+        });
+      }
+    });
+
+    var initTextOverflow = function(){
+      alert('init again');
+      $(".short-description").css('height', '');
+      $(".short-description").removeAttr('style');
+      $(".short-description .short").html('');
+      $(".full").removeClass('hide');
+      $("[data-lines]").each(function(){$(this).textOverflowEllipsis()});
+    };
   
